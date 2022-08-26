@@ -1,14 +1,5 @@
 /*GERAL*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: helvetica;
-    color: #323232;
-    border: none;
-}
-
 body { 
     background-image: url('https://picsum.photos/1024/768'); /* ou colocar caso queira mandar uma imagem específica (colocar na pasta img) '../img/background.png'*/
     background-size: cover;
@@ -34,7 +25,7 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     padding: 20px 30px;
-    margin-top: 10vh; /*view hight, altura da tela, também para responsividade*/
+    margin-top: 10vh; /*view height, altura da tela, também para responsividade*/
     border-radius: 10px;
     text-align: center;
 }
@@ -122,4 +113,131 @@ input[type="submit"]:hover {
 
 .register-container {
     margin-bottom: 10px;
+}
+
+/*Responsividade - EM PROCESSO*/ 
+
+/*MOBILE - CELULAR*/
+
+@media screen and (min-width: 200px) and (max-width: 376px){
+    .login-container {
+        width: 250px; /* tamanho bom para não bugar em telas -325 px*/
+        padding: 15px 20px; /* espaço dentro da box até a borda*/
+        margin-bottom: 68px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .email {
+        width: 226px;
+    }
+
+    .password{
+        width: 226px;
+    }
+
+    .forgot-pass{
+        font-size: 15px;
+    }
+
+    body {
+        overflow-x: hidden; /*Esconde a barra de rolagem lateral 8==D*/
+        background-size: 500px 702px;
+    }
+
+}
+
+@media screen and (min-width:376px) and (max-width: 426px) {
+    .login-container {
+        width: 325px;
+        padding: 15px 20px;
+    }
+
+    .email {
+        width: 300px;
+    }
+
+    .password {
+        width: 300px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .forgot-pass {
+        font-size: 15px;
+    }
+
+    body {
+        background-size: 426px 800px;
+    }
+}
+
+/*MOBILE - TABLET*/
+
+@media screen and (min-width: 426px) and (max-width: 769px) {
+    .login-container {
+        width: 425px;
+        padding: 15px 20px;
+    }
+
+    .email {
+        width: 400px;
+    }
+
+    .password {
+        width: 400px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+    
+    .forgot-pass {
+        font-size: 16px;
+    }
+
+    .register {
+        font-size: 15px;
+    }
+
+    body {
+        background-size: 768px 705px;
+    }
+}
+
+/*LAPTOP 1024*/
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    .login-container {
+        width: 400px;
+        padding: 15px 20px;
+    }
+
+    .email {
+        width: 375px;
+    }
+
+    .password {
+        width: 375px;
+    }
+
+    .register {
+        font-size: 14px;
+    }
+
+    .forgot-pass {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    body {
+        background-size: 1025px 705px;
+    }
 }
